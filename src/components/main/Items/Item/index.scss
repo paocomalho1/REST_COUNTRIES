@@ -1,0 +1,79 @@
+@import "../../../../utils/variables.scss";
+
+.Item{
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: calc(25% - 0.75rem);
+    @include medio{
+        width: calc(50% - 0.5rem)
+    }
+    @include pequeno{
+        width: 100%;
+    }
+
+    &__link{
+        @include nunitoSans-800;
+        text-decoration: none;
+        color: black
+    }
+    
+    &:hover{
+        cursor:pointer;
+    }
+    margin: 0;
+    &:nth-child(4n){
+        padding-right: 0 !important;
+    }
+
+    
+        @include medio{
+            &:nth-child(2n){
+                padding-right: 0 !important;
+            }
+        }
+        @include pequeno{
+            padding-right: 0;
+        }
+        
+
+
+    &__img{
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        width: 320px;
+        height: 203px;
+        width: 100%;
+        box-shadow: 0px 0px 5px 0px $DarkGray;
+    }
+    &__conteiner{
+        width: 100%;
+        padding: 1rem;
+        background-color: white;
+        width: calc(100% - 2rem);
+        border-bottom-left-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+        box-shadow: 0px 0px 5px 0px $DarkGray;
+    }
+
+    &__pais{
+        @include nunitoSans-800;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+
+    }
+    &__populacao{
+        @include nunitoSans-300;
+        margin-bottom: .2rem;
+        
+    }
+    &__regiao{
+        @include nunitoSans-300;
+        margin-bottom: .2rem;
+    }
+    &__capital{
+        @include nunitoSans-300;
+        margin-bottom: 1rem;
+    }
+}

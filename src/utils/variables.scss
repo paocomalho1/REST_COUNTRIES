@@ -1,0 +1,63 @@
+//colors 
+
+$darkBlue: hsl(209, 23%, 22%);
+$VeryDarkBlue: hsl(207, 26%, 17%);
+$DarkGray: hsl(200, 15%, 8%);
+$VeryLightGray: hsl(0, 0%, 98%);
+
+
+//fonts
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,800&display=swap');
+
+@mixin nunitoSans-300{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+@mixin nunitoSans-600{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+}
+@mixin nunitoSans-800{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+}
+
+//mixins
+
+@mixin paddingYDefalt{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+@mixin paddingXDefalt{
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+@mixin marginYDefalt{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@mixin marginXDefalt{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+@mixin flexDefault{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+//responsividade
+
+@mixin pequeno {
+    @media only screen and (max-width: 540px){ @content;}
+}
+@mixin medio {
+    @media only screen and (max-width: 992px) and (min-width: 541px){ @content;}
+}
+@mixin largo {
+    @media only screen and (max-width: 1140px) and (min-width: 1139px){ @content;}
+}
+

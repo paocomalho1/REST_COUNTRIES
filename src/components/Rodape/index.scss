@@ -1,0 +1,13 @@
+@import '../../utils/variables.scss';
+
+.Rodape{
+    padding: 2rem;
+    background-color: white;
+    text-align: center;
+    h2{
+        @include nunitoSans-800;
+    }
+    @include pequeno{
+        padding: 1rem;
+    }
+}

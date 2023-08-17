@@ -1,0 +1,172 @@
+@import "../../utils/variables.scss";
+
+.Pais{
+
+    padding-top: 4rem;
+    @include pequeno{
+        height: auto !important;
+    }
+
+    &__back{
+        display: flex;
+        align-items: center;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        background-color: white;
+        border: none;
+        box-shadow: 0px 0px 5px 0px $DarkGray;
+        margin-right: 0.1rem;
+        margin-left: 0.1rem;
+        border-radius: 0.25rem;
+        margin-bottom: 4rem;
+        @include nunitoSans-300;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+    &__backText{
+        margin-left: 1rem;
+    }
+    &__div{
+        display: flex;
+        align-items: start; 
+        justify-content: center;
+        @include medio{
+            flex-direction: column;
+            align-items: start;
+        }
+        @include pequeno{
+            flex-direction: column;
+            align-items: start;
+        }
+
+    }
+    &__img{
+        margin-right: 4rem;
+        width: 50%;
+        height: 300px;
+        @include medio{
+            width: 100%;
+        }
+        @include pequeno{
+            width: 100%;
+        }
+    }
+    @include paddingYDefalt;
+    &__secao{ 
+        margin-left: 4rem;
+        width: 50%;
+        @include medio{
+            display: flex;
+            flex-direction: column;
+            margin-top: 3rem;
+            width: 100%;
+            margin-left: 0rem;
+            align-items: center;
+        }
+        @include pequeno{
+            margin-top: 3rem;
+            width: 100%;
+            margin-left: 0rem;
+        }
+    }
+    &__divisao{
+        height: 180px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        @include medio{
+            width: 100%;
+            flex-wrap: nowrap;
+            height: 260px;
+        }
+        @include pequeno{
+            width: 100%;
+            flex-wrap: nowrap;
+            height: 260px;
+        }
+        
+    }
+    &__titulo{
+        @include nunitoSans-800;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    &__paragrafo{
+        @include nunitoSans-300;
+        margin-bottom: 1rem;
+        width: 60%;
+        @include medio{
+            text-align: center;
+            width: 100%;
+            &:nth-child(5n){
+                margin-bottom: 2rem;
+            }
+        }
+        @include pequeno{
+            width: 100%;
+            &:nth-child(5n){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+
+    &__conteiner{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        width: 100%;
+        @include medio{
+            flex-direction: column;
+            align-items: start;
+        }
+        @include pequeno{
+            flex-direction: column;
+            align-items: start;
+        }
+
+    }
+    &__conteiner div{
+        width: 100%;
+    }
+    &__botao{
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+        background-color: white;
+        border: none;
+        box-shadow: 0px 0px 5px 0px $DarkGray;
+        margin-right: 0.25rem;
+        margin-left: 0.25rem;
+        border-radius: 0.25rem;
+        margin-bottom: 1rem;
+        @include pequeno{
+            width: calc(33.33% - 0.5rem);
+        }
+        @include medio{
+            width: calc(33.33% - 0.5rem);
+        }
+        @include nunitoSans-300;
+
+        &:hover{
+            cursor: pointer;
+        }
+        
+
+    }
+}
+.border{
+    width: 40%;
+    @include medio{
+        width: 100%;
+        text-align: center;
+    }
+}
+.strong{
+    @include nunitoSans-600;
+}

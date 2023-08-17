@@ -1,0 +1,29 @@
+@import "../../../utils/variables.scss";
+
+.FilterBy{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    width: 15%;
+    outline: 0;
+    border: none;
+    box-shadow: 0px 0px 5px 0px $DarkGray;
+    border-radius: 0.5rem;
+    @include nunitoSans-300;
+    @include pequeno{
+        width: 60%;
+        margin-top: 1rem;
+    }
+    @include medio{
+        width: 25%;
+    }
+
+    &__options{
+        @include nunitoSans-300;
+        border:none;
+        box-shadow: 0px 0px 5px 0px $DarkGray;
+        
+        
+    }
+}

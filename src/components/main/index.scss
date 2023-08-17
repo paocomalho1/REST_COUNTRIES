@@ -1,0 +1,8 @@
+@import "../../utils/variables.scss";
+
+.main{
+    background-color: $VeryLightGray;
+    @include paddingYDefalt;
+    padding-bottom: calc(60vh + 0.15rem);
+
+}

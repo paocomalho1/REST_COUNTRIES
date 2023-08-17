@@ -1,0 +1,28 @@
+@import "../../utils/variables.scss";
+
+.header{
+    @include flexDefault;
+    @include paddingYDefalt;
+    @include paddingXDefalt;
+    @include pequeno{
+        font-size: .9rem
+    }
+    &__title{
+        @include nunitoSans-800;
+        font-size: 1.25rem;
+        @include pequeno{
+            font-size: 1rem
+        }
+    
+    }
+    &__darkMode{
+        display: flex;
+        cursor: pointer;
+        
+    }
+    &__p{
+        @include nunitoSans-600;
+        margin-left: 0.5rem;
+    }
+}
+
